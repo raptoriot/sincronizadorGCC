@@ -20,6 +20,7 @@ python pub.py $proyecto casa-consumo
 **SEGUNDA PARTE**
 en esta parte vamos a crear un codigo para un dispositivo iot
 pasos:
+pip install paho-mqtt
  carga rlos repositorios de requirementsIOT.txt 
  crear el nodo en la pagina junto con el registro y enlazarlo al topico pub/sub
  crear las llaves y subir la publica a l portal
@@ -40,3 +41,14 @@ pasos:
       --device_id=rasp1 \
       --private_key_file=private-key.pem \
       --algorithm=RS256
+      
+ 
+ 
+**TERCER PARTE**
+codigo xbeeIotGoogle lee de xbee que envia corriente, para esto es nesario un xbee que envie con la si trama:
+API2: [126, 0, 15, 129, 0, 32, 78, 0, 0, 9, 1, 187, 0, 0, 0, 0, 0, 0, 75]  
+API0: [126, 0, 10, 131, 0, 32, 78, 0, 1, 2, 0, 3, 255, 9] 
+
+se creo un archivo llamado inicio, que ejecuta un scrip llamado lazandar que ejecuta un python, y lo vuelve a levantar si se 
+cae
+el programa xbeeIorGoogle.py funciona recibiendo los datos de corriente y enviandolos a una publicacion pub/sub. 
