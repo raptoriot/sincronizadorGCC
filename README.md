@@ -52,3 +52,13 @@ API0: [126, 0, 10, 131, 0, 32, 78, 0, 1, 2, 0, 3, 255, 9]
 se creo un archivo llamado inicio, que ejecuta un scrip llamado lazandar que ejecuta un python, y lo vuelve a levantar si se 
 cae
 el programa xbeeIorGoogle.py funciona recibiendo los datos de corriente y enviandolos a una publicacion pub/sub. 
+
+
+**CUARTA**
+Ahora vamos a crear la carpeta ServidorSubSql, donde se va a crear dos programas para suscribirse a un topico
+y guardar en un BD sql:
+
+subSqlLocal, programa que correo en pc, se suscribe a pusub y guarda en sql de proxy 
+median sqlalchemy, tiene ademas un jupiter para crear la bd y probar la conexion
+Esta configurado para SQL de google, para que funcione se debe levantar el proxy
+
