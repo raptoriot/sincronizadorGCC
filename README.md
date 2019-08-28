@@ -62,3 +62,5 @@ subSqlLocal, programa que correo en pc, se suscribe a pusub y guarda en sql de p
 median sqlalchemy, tiene ademas un jupiter para crear la bd y probar la conexion
 Esta configurado para SQL de google, para que funcione se debe levantar el proxy
 
+**QUINTA**
+subSQlGCC programa pubsub-sql pero desde VM de google
