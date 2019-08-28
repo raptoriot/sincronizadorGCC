@@ -64,3 +64,4 @@ Esta configurado para SQL de google, para que funcione se debe levantar el proxy
 
 **QUINTA**
 subSQlGCC programa pubsub-sql pero desde VM de google
+este programa aunque este en VM de google, igual necesita key.json

@@ -1,0 +1,8 @@
+#!/bin/bash
+sleep 3
+cd /usr/local/bin/
+while true
+do
+	/usr/bin/python3 subSqlGCC.py
+	sleep 3
+done

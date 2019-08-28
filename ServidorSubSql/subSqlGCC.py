@@ -11,8 +11,8 @@ import sqlalchemy
 from sqlalchemy import Table, Column, Integer, String, MetaData
 from sqlalchemy import create_engine
 
-#engine = create_engine('mysql+pymysql://alvarov:lata5comprar@127.0.0.1:3306/prueba_appengine', echo=True)
-engine = create_engine('mysql+pymysql://alvarov:lata5comprar@/prueba_appengine?unix_socket=/cloudsql/asistente-180018:southamerica-east1:bd-bsa-chequeo-planta', echo=True)
+engine = create_engine('mysql+pymysql://alvarov:lata5comprar@35.198.8.176:3306/prueba_appengine', echo=True)
+#engine = create_engine('mysql+pymysql://alvarov:lata5comprar@/prueba_appengine?unix_socket=/cloudsql/asistente-180018:southamerica-east1:bd-bsa-chequeo-planta', echo=True)
 metadata = MetaData()
 users = Table('datosConsumo', metadata,
    Column('id', Integer, primary_key=True),
